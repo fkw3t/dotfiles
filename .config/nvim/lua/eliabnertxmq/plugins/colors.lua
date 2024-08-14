@@ -63,7 +63,6 @@ return {
 		"slugbyte/lackluster.nvim",
 		config = function()
 			local lackluster = require("lackluster")
-			-- !must called setup() before setting the colorscheme!
 			require("nvim-web-devicons").setup({
 				color_icons = false,
 				override = {
@@ -73,7 +72,11 @@ return {
 					},
 				},
 			})
-			vim.cmd.colorscheme("lackluster")
+
+			-- vim.cmd.colorscheme("lackluster")
+			vim.cmd.colorscheme("lackluster-hack")
+			-- vim.cmd.colorscheme("lackluster-mint")
+			-- vim.cmd.colorscheme("lackluster-dark")
 		end,
 	},
 }

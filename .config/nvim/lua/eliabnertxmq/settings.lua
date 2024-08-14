@@ -30,6 +30,7 @@ vim.opt.updatetime = 50
 
 vim.opt.colorcolumn = "110"
 
+vim.opt.hlsearch = true
+
 -- set actual dir as base dir for commands
 -- vim.opt.autochdir = true
-
