@@ -13,6 +13,7 @@ return {
 				go = { "gofumpt" },
 				lua = { "stylua" },
 				python = { "black" },
+				terraform = { "lsp" },
 			},
 			format_on_save = {
 				lsp_fallback = true,

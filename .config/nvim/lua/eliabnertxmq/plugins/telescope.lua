@@ -23,6 +23,16 @@ return {
 						},
 					},
 				},
+				pickers = {
+					find_files = {
+						hidden = true,
+						file_ignore_patterns = { ".git/" },
+					},
+					oldfiles = { hidden = true },
+					git_files = { hidden = true },
+					live_grep = { hidden = true },
+					grep_string = { hidden = true },
+				},
 			})
 
 			vim.keymap.set("n", "<leader>ff", builtin.find_files, { desc = "Fuzzy find files in cwd" })

@@ -21,6 +21,7 @@ return {
 			window = {
 				mappings = {
 					["<C-t>"] = "open_tabnew",
+					-- TODO: HL tree motion
 				},
 			},
 		})

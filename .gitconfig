@@ -1,3 +1,13 @@
 [user]
 	email = 46829134+fkw3t@users.noreply.github.com
 	name = Eliabner Teixeira
+[core]
+	editor = vim
+[credential]
+	helper = osxkeychain
+; [merge]
+; 	ff = only
+[pull]
+	rebase = false
+[alias]
+    undo = reset --soft HEAD~1
