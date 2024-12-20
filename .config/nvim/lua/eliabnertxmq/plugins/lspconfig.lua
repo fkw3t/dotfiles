@@ -40,6 +40,12 @@ return {
 			vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, { desc = "LSP, smart rename" })
 			vim.keymap.set("n", "<leader>rs", ":LspRestart<CR>", { desc = "LSP, restart" })
 			vim.keymap.set("n", "K", vim.lsp.buf.hover, { desc = "LSP, show documentation" })
+			vim.keymap.set(
+				"n",
+				"<leader>d",
+				"<cmd>lua vim.diagnostic.open_float()<CR>",
+				{ desc = "LSP, show diagnostics" }
+			)
 			vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, { desc = "LSP, show code actions" })
 			-- vim.keymap.set("n", "gd", "<cmd>Telescope lsp_definitions<CR>", { desc = "Show LSP definitions" })
 			vim.keymap.set("n", "gd", vim.lsp.buf.definition, { desc = "LSP, go to definition" })

@@ -37,7 +37,7 @@ return {
 
 			vim.keymap.set("n", "<leader>ff", builtin.find_files, { desc = "Fuzzy find files in cwd" })
 			vim.keymap.set("n", "<leader>fr", builtin.oldfiles, { desc = "Fuzzy find recent files" })
-			vim.keymap.set("n", "<leader>fg", builtin.git_files, { desc = "Fuzzy find git files" })
+			vim.keymap.set("n", "<leader>fg", builtin.git_status, { desc = "Fuzzy find git files" })
 			vim.keymap.set(
 				"n",
 				"<leader>fb",
